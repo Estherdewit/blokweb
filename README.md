@@ -40,13 +40,12 @@ De website die ik ga namaken is van het Nxt Museum.
 In de volgende link komt u op hun website: https://nxtmuseum.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+De Tentoonstelling  
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
+Events
+ ![Nxt Museum - Events](https://user-images.githubusercontent.com/89992194/133617092-9c2073a6-3452-4685-a32f-d1ab87ca005c.png)
 </details>
 
 
