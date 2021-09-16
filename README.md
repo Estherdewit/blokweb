@@ -39,12 +39,13 @@ Responsive
 De website die ik ga namaken is van het Nxt Museum. 
 In de volgende link komt u op hun website: https://nxtmuseum.com
 
-#### Screenshot(s) van de eerste pagina (small screen): 
-De Tentoonstelling  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+#### Screenshot(s) van de eerste pagina (small screen): Tentoonstelling 
 
-#### Screenshot(s) van de tweede pagina (small screen):
-Events
+![Nxt Museum - Tentoonstelling ](https://user-images.githubusercontent.com/89992194/133617304-0cd878f6-97ed-4b01-9d3e-af2bda693385.png)
+
+
+#### Screenshot(s) van de tweede pagina (small screen):Events
+ 
  ![Nxt Museum - Events](https://user-images.githubusercontent.com/89992194/133617092-9c2073a6-3452-4685-a32f-d1ab87ca005c.png)
 </details>
 
