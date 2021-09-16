@@ -57,7 +57,13 @@ In de volgende link komt u op hun website: https://nxtmuseum.com
 
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
+ 
+### Beide pagina's
+ 
+<img width="385" alt="Schermafbeelding 2021-09-16 om 15 07 31" src="https://user-images.githubusercontent.com/89992194/133617643-1eafc0b3-45a5-4c4c-a0c2-a4313e49f14a.png">
 
+--> Na eventuele aanpassingen ga ik het volgende nog invoegen:
+ 
 ### de hele pagina: 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
@@ -79,17 +85,25 @@ In de volgende link komt u op hun website: https://nxtmuseum.com
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Ik merk dat CCS mij veel gemakkelijker af gaat dan JS. Dit vind ik dan ook lastig. Wel vond de opdrachten erg leuk om te doen, echter is het wel
+veel werk als je zelf moeite hebt met coderen. Hierbij merk ik dan ook wel dat ik opdrachten of niet 
+helemaal af krijg of erg lang bezig ben.
+ 
+Verder merk ik ook dat ik weer erg moet inkomen en meerdere dingen weer opnieuw moet opzoeken, omdat HTML bijvoorbeeld
+alweer een jaar geleden is. Ik moet gewoon weer even van start gaan! Je zou me kunnen vergelijken met een diesel. 
+ 
+(neem ook screenshots op van delen van je website en code)###--> waarom hoort dit hierbij?
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Esther de Wit  | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| - HTML element | en dit             | en ik dit    | en dan ik dat    |
+| - article      | dit als er tijd is | nog een punt | dit wil ik zeker |
+| - section      | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
