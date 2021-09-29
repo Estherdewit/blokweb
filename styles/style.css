@@ -1,5 +1,240 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+@font-face {
+    font-family: 'telegrafultralight';
+    src: url('../fonts/telegrafultralight200-webfont.woff2') format('woff2'),
+         url('../fonts/telegrafultralight200-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'neue_machinaregular';
+    src: url('../fonts/neuemachina-regular-webfont.woff2') format('woff2'),
+         url('../fonts/neuemachina-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--main-color:#000000;
+	--background-color:#000000;
+	--overlay-background-color:#000000ee;   
+}
+
+
+
+/*******************/
+/* GENERAL STYLING */
+/*******************/
+html {
+    height: 100%;
+}
+
+body{
+    background-color:var(--background-color);
+    font-family:telegrafultralight;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    text-decoration: none;
+    font-size: 54px;
+}
+
+h2 {
+    color: white;
+    text-decoration: none;
+}
+
+h3{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+h4{
+    color: white;
+    text-decoration: none;
+}
+
+h5 {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    text-decoration: none;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/**********/
+/* HEADER */
+/**********/
+header {
+    display:flex;
+    justify-content: space-between;
+}
+nav {
+    /* display:flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none; */
+}
+nav li:last-child a{
+    padding-top: 20px;
+}
+
+
+
+header nav button {
+    position: relative;
+    z-index: 100;
+    width:4em; height:2em;
+    margin:40px; padding: 20px;
+    
+    font-size:1em;
+    appearance:none;
+    border:none;
+    background-color:green;
+
+      /* hiermee staan de drie streepjes om te beginnen in het midden */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    width:2em; 
+    background-color: black;
+    transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+}
+
+/* de streepjes */
+button span {
+    /* hiermee worden de span uit de normale flow gehaald */
+    /* in combinatie met flex van de button staan ze dan over elkaar heen */
+    position:absolute;
+    /* maten en een kleurtje */
+    width:1em; height: 2px;
+    background-color:white;
+    
+    /* zodat de beweging op de terugweg .5 seconde duurt */
+    /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
+    /* https://matthewlein.com/tools/ceaser */
+    transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  }
+  
+  button span:first-of-type {
+    /* het eerste streepje vanuit het midden een beetje omhoog */
+    transform:translatey(-5px);  
+  }
+  button span:last-of-type {
+    /* het laatste streepje vanuit het midden een beetje omlaag */
+    transform:translatey(5px);  
+  }
+
+ 
+
+
+
+
+header nav ul {
+    position:fixed;
+    left:0;
+    width:100vw;
+    top:0;
+    height:99vh;
+    margin:0;
+    padding:1em;
+    transform: translateY(-100%);
+    list-style: none;
+    background-color:black;
+    transition: .3s;
+}
+
+
+
+header nav ul li a {
+    display: flex;
+    padding-left: 4em;
+    padding-bottom: 1em;
+}
+
+
+
+
+
+header nav.menuOpen ul {
+    transform: translateY(0%);
+}
+
+
+
+/********/
+/* MAIN */
+/********/
+main {
+    display: flex;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+section ul li {
+    list-style: none;
+}
+
+
+/********/
+/* IMAGES */
+/********/
+
+section ul li a img {
+    max-width: 90%;
+    margin: 0;
+    padding-right:10px;
+}
+
+
+/********/
+/* FOOTER */
+/********/
+
+footer {
+    display: flex;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-direction: column;
+    font-family:neue_machinaregular;
+    font-size: 16px;
+}
+
+footer >img{
+    margin:0px 0px 50px;
+}
