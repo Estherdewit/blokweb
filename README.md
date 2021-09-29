@@ -171,8 +171,10 @@ zichtbaas was. Dit is dan ook een bevinding die valt te verbeteren.
 ![IMG_0105](https://user-images.githubusercontent.com/89992194/135269515-045ebe60-da17-46d6-bb08-7df2fddc78f0.jpg)
 
 Het volgende heb ik hieraan gedaan en heb ik net zo gemaakt als de orginele Nxt Museum website:
+<img width="335" alt="Schermafbeelding 2021-09-29 om 14 46 38" src="https://user-images.githubusercontent.com/89992194/135273802-bd5ce60b-b4c2-4587-a819-cfc7c2e0c82d.png">
 
-![pijl](https://user-images.githubusercontent.com/89992194/135270349-007a1f8d-a8ab-4d27-88c6-69bea67f9e1f.png)
+
+
 
 
 #### Titel tweede bevinding. 
