@@ -126,6 +126,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
+ 
+In deze week vond ik 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
@@ -159,12 +161,18 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+Tijdens de toegankelijkheidstest zijn bij mij de volgende bevindingen naar voren gekomen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Low Contrast
+Tijdens het testen met de verschillende brillen kwam de eerste bevinding naar boven met de 'Low Contrast' bril. 
+Deze bril liet het beeld vervagen en je merkte in mijn scherm dat het verschil tussen muis en achtergrond niet meer 
+zichtbaas was. Dit is dan ook een bevinding die valt te verbeteren. 
+![IMG_0103](https://user-images.githubusercontent.com/89992194/135269511-bc2385bd-160d-4238-a6f1-2fd0acbdd83e.jpg)
+![IMG_0105](https://user-images.githubusercontent.com/89992194/135269515-045ebe60-da17-46d6-bb08-7df2fddc78f0.jpg)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Het volgende heb ik hieraan gedaan en heb ik net zo gemaakt als de orginele Nxt Museum website:
+
+![pijl](https://user-images.githubusercontent.com/89992194/135270349-007a1f8d-a8ab-4d27-88c6-69bea67f9e1f.png)
 
 
 #### Titel tweede bevinding. 
@@ -196,6 +204,8 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
+ 
+
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
