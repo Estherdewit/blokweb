@@ -191,13 +191,13 @@ Dit heb ik dan ook laten zien aan de hand van afbeeldingen.
  De donkere plaatjes lijken veel op elkaar. Dit is echter niet te wijzigen aangezien ik de website van het
  Nxt Museum moet na maken. Echter zou dit wel een advies zijn voor de bouwers van de website van het Nxt Museum.
  
- Blur/glare cataract 
+ Blur/glare cataract (Cataract)
  Tekst is moeilijk te lezen voor de blur. De ruimte tussen de letter is te klein je ziet eigenlijk een 
  soort vervaagd wit vlak. Om dit te verbeteren zou je de letters niet te dik/ te dun moeten doen en de
  woorden meer verspreiden over het vlak. Echter ben ik van mening dat het er dan niet meer uit ziet en
  zou ik de lezer adviseren om een voice over te gebruiken voor de tekst. 
  
- Central Field Loss
+ Central Field Loss (Macula degeneratie)
  Bij deze aandoening is het zicht in het midden gehele weg. Je probeert dan ook met de bril om erover heen 
  te gaan kijken. Ik dat lezen van grote tekste te vermoeiend voor iemand is met deze aandoening. Daarom 
  zou ik ook iemand met deze aandoening willen adviseren om een voice-over te gebruiken.
@@ -206,15 +206,16 @@ Dit heb ik dan ook laten zien aan de hand van afbeeldingen.
  Bij deze gezichtsaandoening zie je niets vanaf de zijkant komen. Het beeldvlak dat je hebt is vooral gefocust naarvoren.
  Je ziet niets van de zijkant aan komen. Opzich voor een scherm weinig problemen.
  
-#### Voice-over
+ 
+ #### Voice-over
 
 Tijdens het testen van de voice-over heb ik gemerkt dat je echt wel even moet weten hoe de Voice-over. Het lijkt dan mij ook wel lastig als je moeilijk zicht hebt om uberhaupt dit uit te vogelen. Bij het testen van mijn website die ik tot nu toe heb. Heb ik de volgende ondervonden:
  
  #### - Korte teksten: Vele korte zinnen/teksten komen heel raar over als je de voice-over aan hebt. 
- Je krijg het idee als of je pagina geen hele zinnen uitspreken bijna. Ik ben van mening dat je dus echt beter het 
- verschil zou moeten kunnen horen tussen bepaalde delen op een website. Waardoor je hoort wanneer het de informatie van de   
- pagina en of het bijvoorbeeld bij een afbeelding hoort. Echter weet ik niet hoe ik dit voor elkaar krijg en heb ik nog genoeg 
- werk aan mijn website op zich zelf. Dit zou ik dan ook zien als een verbetering voor later. 
+ Je krijg het idee als of je pagina geen hele zinnen uitspreken bijna. Ik zou dit zelf doen door iets langere stukken tekst te  
+ maken, echter is dit niet efficient voor de website voor zijn doelgroep. Wel denk ik dat voor mensen die naar voice-over 
+ luisteren dit prettiger zouden vinden. Helaas ben ik geen ervaringsdeskundige om hier over te kunnen oordelen. Dit is dan ook 
+ meer iets voor de website bouwers van het Nxt Museum op zich zelf. 
  
  #### - Klikbaarheid: Tijdens het testen heb ik gemerkt dat je niet hoort wanneer iets klikbaar is. Denk hierbij aan het    
  hamburgermenu dat ik heb, de klikbare afbeeldingen en andere links (footer). Echter heb ik geen idee hoe ik dit kan realiseren  
@@ -223,27 +224,36 @@ Tijdens het testen van de voice-over heb ik gemerkt dat je echt wel even moet we
  #### - Afbeeldingen: Bij de afbeeldingen kwam ik er achter dat je eigenlijk niet hoort dat er afbeeldingen zijn. Ik weet hoe ik 
  dit kan toevoegen aan de afbeeldingen en ga ik ook zeker verwerken in mijn website. 
  
- #### - Verschil tussen menu en tekst:
+ #### - Verschil tussen menu en tekst:Ik ben van mening dat je dus echt beter het 
+ verschil zou moeten kunnen horen tussen bepaalde delen op een website. Waardoor je hoort wanneer het de informatie van de   
+ pagina is of van een menu en of het bijvoorbeeld bij een afbeelding hoort. Echter weet ik niet hoe ik dit voor elkaar krijg en   
+ heb ik nog genoeg werk aan mijn website op zich zelf. Dit zou ik dan ook zien als een verbetering voor later.
  
- #### - Engels v.s Nederlands: Als je de 
+ #### - Engels v.s Nederlands: Mocht je nou Nederlands aan hebben staan voor de voice-over en toevallig een engelse tekst  
+ hebben. Zorg er dan voor dat de pc zo ingesteld is dat de tekst in het engels wordt uitgesproken. Ik merkte namelijk tijdens 
+ het testen dat de Nederlandse spraak niet overeen kwam met de Engelse tekst. Woorden werken verkeerd uitgesproken en dit 
+ belemmerd de verstaanbaarheid voor de gebruiker van de voice-over.  
  
  
+ #### Parkinson
+ Eenmaal het apparaat aan merk je hoe zwaar het is om met spasmes te leven. Je hebt simpel weg geen controle over je arm(en). 
+ Typen gaat erg slecht de toetsen van het toetsenbord zijn eigenlijk te klein om de spasmes onder controle te houden. 
+ Met de muis gaat het echter beter. Ik weet de muis op de ondervloer te houden en het lukt mij om de klikken. Wel moet ik 
+ zeggen dat als het knopje te klein is op het scherm dat het wel aanzienlijk moeilijker gaat. Het ligt dus echt aan de mate
+ waarin je hier last van hebt. In erge mate zou ik dan ook adviseren om de voice-over te gebruiken.
  
  
-
+ #### Bewegingsbeperking
+ Door dat mijn vingers vast gebonden zijn merk ik dat ik meer ruimte nodig zou moeten hebben op mijn toetsenbord. Echter heb je
+ dit niet en merk je dat je snel extra toetsen meeneemt. Daarentegen is de muis gemakkelijker te gebruiken.
  
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
  
-
+ #### Mensen die snel zijn afgeleid
+ Je merkt dat je steeds met iets anders bezig bent. Tijdens het ballon hooghouden heb je de mogelijkheid af en toe om op
+ het scherm te focussen. Je raakt hier snel vermoeid van en je weet niet hoe je je focus moet bewaren. Ik vind het lastig om te 
+ zeggen 'het volgende kan je hier tegen doen'. Het lijkt me vooral erg moeilijk om er mee om te moeten gaan in de tijd waarin 
+ we nu leven.
+ 
 </details>
 
 
@@ -256,29 +266,52 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
+De tijd begint te dringen volgende week moet alles worden ingeleverd en donderdag heb ik mijn mondeling over Frontend. 
+Ik merk dat eindelijk de druk bij mijzelf verhoogd en dat mijn werk steeds meer opschiet. Ik zie daardoor ook meer resultaat 
+en merk dat ik hierdoor wel bezig blijf. Mijn takenlijst wordt steeds kleiner. Voor dat ik met het voortgangsgesprek start 
+loop ik vooral tegen iets op wat wel een vereiste is, echter heb ik geen idee hoe ik dat met de site van het Nxt museum moet aanpakken namelijk 'Responsiveness'. Samen met Rick had ik deze vraag en waren we er snel overuit dat wij dit wilde vragen tijdens ons voortgangsgesprek.  
+
+Omdat je nu pas echt voorgang ziet heb ik de volgende screenshots gemaakt:
+ 
+ #### Delen code
+<img width="963" alt="Schermafbeelding 2021-10-04 om 15 50 54" src="https://user-images.githubusercontent.com/89992194/135863339-7246bd31-56c9-42bf-9bc8-29fa2001cd78.png">
+ 
+<img width="979" alt="Schermafbeelding 2021-10-04 om 15 51 14" src="https://user-images.githubusercontent.com/89992194/135863391-f5d1fd66-7e15-41b3-93ea-eace522de531.png">
+ 
+ #### Website voortgang
  
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+![week 4 -Events](https://user-images.githubusercontent.com/89992194/135864902-71fbecdf-7c41-4f30-8e5e-53af58ba8e5f.png)
+![Week 4- exhibition](https://user-images.githubusercontent.com/89992194/135864927-d2a3c140-d4f2-4783-8636-5070f405c32a.png)
+
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
+De agenda heb ik samengesteld met Rick aangezien de voorgaande keren niemand hier verder over begonnen is. 
+Ook dit keer was het zo dat ik alleen met Rick was.
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Onze agenda ziet er als volgt uit:
+
+| Rick           | Esther             | 
+| ---            | ---                | 
+| Responsiveness | Responsiveness     | 
+|                | Menus css          | 
+| ...            | ...                | 
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Deze informatie hadden wij aan Rowin te danken. Uit deze voortgangsmeeting is het volgende gebleken
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
-
+- De 'Responsiveness': in de @media only screen and (min width: 600px){ }
+ kun je aangeven bij welk formaat van je scherm de website zich moet gaan aanpassen. 
+ Op deze manier kan je voor verschillende divices de schermen creeeren die passend zijn aan het formaat. 
+ Je geeft dan ook meerdere @media (s) aan, waarom? Ze overschrijven elkaar op deze manier blijft je website
+ zichzelf aanpassen en dit maakt het 'Responsive'. 
+ 
+- Het 'Menu CSS': Door de ul te pakken van mijn menu kon ik de li:first-child aanspreken. Ik dacht steeds dat ik dit wel af
+kon maken aan de hand van de ul te stijlen. Echter was dit niet waar. Door nog wat te regelen met mijn padding en margin kreeg
+ik het onder de knie om mijn menu volledig naar willen te veranderen.  
+ 
 </details>
 
 
