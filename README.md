@@ -62,17 +62,6 @@ In de volgende link komt u op hun website: https://nxtmuseum.com
  
 <img width="385" alt="Schermafbeelding 2021-09-16 om 15 07 31" src="https://user-images.githubusercontent.com/89992194/133617643-1eafc0b3-45a5-4c4c-a0c2-a4313e49f14a.png">
 
---> Na eventuele aanpassingen ga ik het volgende nog invoegen:
- 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -86,37 +75,34 @@ In de volgende link komt u op hun website: https://nxtmuseum.com
 
 ### Stand van zaken
 
-Ik merk dat CCS mij veel gemakkelijker af gaat dan JS. Dit vind ik dan ook lastig. Wel vond de opdrachten erg leuk om te doen, echter is het wel
-veel werk als je zelf moeite hebt met coderen. Hierbij merk ik dan ook wel dat ik opdrachten of niet 
-helemaal af krijg of erg lang bezig ben.
- 
-Verder merk ik ook dat ik weer erg moet inkomen en meerdere dingen weer opnieuw moet opzoeken, omdat HTML bijvoorbeeld
-alweer een jaar geleden is. Ik moet gewoon weer even van start gaan! Je zou me kunnen vergelijken met een diesel. 
- 
-(neem ook screenshots op van delen van je website en code)###--> waarom hoort dit hierbij?
+Voor mijn eerste voorgangsgesprek ben ik eerst gaan kijken wat vind ik leuk en dat is voornamelijk de CSS! Ik merkt dat vorig blok Javascript mij zo erg tegenstond, dat ik ook niet echt fijn dit vak ik ga. Ik kom dan ook mijzelf een beetje tegen dat mijn motivatie nog erg laag is na de vakantie. Het zijn leuke opdrachten om te maken, maar soms is mij het wat veel voor de tijd die we hebben tot de volgende les. Ik kom niet helemaal goed uit met mijn tijdsindeling door de weeks incombinatie met Vormgeving 2. 
 
+Echter moet gewoon weer van start gaan! Je zou me kunnen vergelijken met een diesel. 
+ 
+Ik begreep je eerste week nog niet hoe er screenshots gemaakt moesten worden, aangezien ik niet bij de fysieke les kon zijn. 
+Vandaar dat ik nog geen screenshots heb van mijn website van week 2. Ook wisten we nog niet dat we met ons groepje een plan
+moesten maken voor wat wij wilde bespreken. 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
+Mijn meeting van mijn eerste voortgangsgesprek doe ik samen met de volgende personen en het volgende heb ik bedacht om te 
+bespreken namelijk:
 
-| Esther de Wit  | student 2          | student 3    | student 4        |
+| Esther         | Rick               | Jeroen       | Kim              |
 | ---            | ---                | ---          | ---              |
-| - HTML element | en dit             | en ik dit    | en dan ik dat    |
-| - article      | dit als er tijd is | nog een punt | dit wil ik zeker |
-| - section      | ...                | ...          | ...              |
+|                | en dit             | en ik dit    | en dan ik dat    |
+| - Article &    | dit als er tijd is | nog een punt | dit wil ik zeker |
+| - Section      | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
-
+- Article en section: Wanneer gebruik ik nou een section bij een article en wanneer niet? i
+  Rowin en Yunus konden mij hier niet een duidelijk antwoord opgeven. Iedereen doet dit weer anders. 
+  Gebruik article alleen bij een stuk tekst dat je kunt opdelen is sections en als je het niet zeker weet doe het dan niet. 
+  Op deze manier voorkom je dat je niet kunt uitleggen waarom je iets hebt gedaan. Verder gaven ze aan dat mijn breakdown 
+  schetsen uitgebreid en er volledig uitzagen. 
 </details>
-
-
 
 
 
@@ -127,41 +113,26 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
  
-In deze week vond ik het lastig om mijn concentratie bij Frontend te houden. 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
-### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+In deze week vond ik het lastig om mijn concentratie bij Frontend te houden. De avond voor dit voortgangsgesprek 
+had ik een 'Stekersfeest' dat sinds tijden weer kon en heb ik helaas de volgende ochtend het voortgangsgesprek gemist. 
+Ook ben ik voor deze week vergeten screenshots te maken. Wel weet ik nog met welke dingen ik bezig was, namelijk:
+ 
+- Bewegend hamburger menu
+- De verschillende fonts importeren
+- afbeeldingen vanuit de officiele website halen 
+- Mijn mobie grootte kloppend maken aan het scherm 
 
 </details>
 
 
 
-
-
 ## Toegankelijkheidstest (week 4)
 
-<details>
+<details open>
 <summary>uitwerken na test in 8e voortgang</summary>
  
 ### Bevindingen oog aandoeningen
-### Bevindingen met mogelijke verandering
+
 Tijdens de toegankelijkheidstest zijn bij mij de volgende bevindingen naar voren gekomen:
 
 #### Low Contrast
@@ -181,33 +152,31 @@ In het voorbeeld Low contrast heb ik weergegeven waar dit hem in zit en hoe ik d
 Dit heb ik dan ook laten zien aan de hand van afbeeldingen. 
 
  
- #### Bevindingen 
- 
- Color-blind (kleurenblind)
+ #### Color-blind (kleurenblind)
  Zorgt ervoor dat het scherm meer geel wordt met deze bril. Verder is alles nog duidelijk te zien op het scherm.
  Ik heb niet kunnen ondervinden op mijn website, waarom dit een belemmering zou zijn voor kleurenblinden. 
  
- Peripheral field loss (Glaucoom)
+ #### Peripheral field loss (Glaucoom)
  De donkere plaatjes lijken veel op elkaar. Dit is echter niet te wijzigen aangezien ik de website van het
  Nxt Museum moet na maken. Echter zou dit wel een advies zijn voor de bouwers van de website van het Nxt Museum.
  
- Blur/glare cataract (Cataract)
+ #### Blur/glare cataract (Cataract)
  Tekst is moeilijk te lezen voor de blur. De ruimte tussen de letter is te klein je ziet eigenlijk een 
  soort vervaagd wit vlak. Om dit te verbeteren zou je de letters niet te dik/ te dun moeten doen en de
  woorden meer verspreiden over het vlak. Echter ben ik van mening dat het er dan niet meer uit ziet en
  zou ik de lezer adviseren om een voice over te gebruiken voor de tekst. 
  
- Central Field Loss (Macula degeneratie)
+ #### Central Field Loss (Macula degeneratie)
  Bij deze aandoening is het zicht in het midden gehele weg. Je probeert dan ook met de bril om erover heen 
  te gaan kijken. Ik dat lezen van grote tekste te vermoeiend voor iemand is met deze aandoening. Daarom 
  zou ik ook iemand met deze aandoening willen adviseren om een voice-over te gebruiken.
  
- Hemifield
+ #### Hemifield
  Bij deze gezichtsaandoening zie je niets vanaf de zijkant komen. Het beeldvlak dat je hebt is vooral gefocust naarvoren.
  Je ziet niets van de zijkant aan komen. Opzich voor een scherm weinig problemen.
  
  
- #### Voice-over
+ ### Voice-over
 
 Tijdens het testen van de voice-over heb ik gemerkt dat je echt wel even moet weten hoe de Voice-over. Het lijkt dan mij ook wel lastig als je moeilijk zicht hebt om uberhaupt dit uit te vogelen. Bij het testen van mijn website die ik tot nu toe heb. Heb ik de volgende ondervonden:
  
@@ -235,7 +204,7 @@ Tijdens het testen van de voice-over heb ik gemerkt dat je echt wel even moet we
  belemmerd de verstaanbaarheid voor de gebruiker van de voice-over.  
  
  
- #### Parkinson
+ ### Parkinson
  Eenmaal het apparaat aan merk je hoe zwaar het is om met spasmes te leven. Je hebt simpel weg geen controle over je arm(en). 
  Typen gaat erg slecht de toetsen van het toetsenbord zijn eigenlijk te klein om de spasmes onder controle te houden. 
  Met de muis gaat het echter beter. Ik weet de muis op de ondervloer te houden en het lukt mij om de klikken. Wel moet ik 
@@ -243,20 +212,18 @@ Tijdens het testen van de voice-over heb ik gemerkt dat je echt wel even moet we
  waarin je hier last van hebt. In erge mate zou ik dan ook adviseren om de voice-over te gebruiken.
  
  
- #### Bewegingsbeperking
+ ### Bewegingsbeperking
  Door dat mijn vingers vast gebonden zijn merk ik dat ik meer ruimte nodig zou moeten hebben op mijn toetsenbord. Echter heb je
  dit niet en merk je dat je snel extra toetsen meeneemt. Daarentegen is de muis gemakkelijker te gebruiken.
  
  
- #### Mensen die snel zijn afgeleid
+ ### Mensen die snel zijn afgeleid
  Je merkt dat je steeds met iets anders bezig bent. Tijdens het ballon hooghouden heb je de mogelijkheid af en toe om op
  het scherm te focussen. Je raakt hier snel vermoeid van en je weet niet hoe je je focus moet bewaren. Ik vind het lastig om te 
  zeggen 'het volgende kan je hier tegen doen'. Het lijkt me vooral erg moeilijk om er mee om te moeten gaan in de tijd waarin 
  we nu leven.
  
 </details>
-
-
 
 
 
