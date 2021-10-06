@@ -44,13 +44,15 @@ body{
     font-family:telegrafultralight;
     font-size: 16px;
     height: 100%;
-    margin: 10px;
+    margin:0;
 }
 
 h1 {
     color: white;
     text-decoration: none;
     font-size: 54px;
+    padding-top: 20px;
+    margin-left: 20px;
 }
 
 h2 {
@@ -63,6 +65,7 @@ h3{
     font-size: 28px;
     text-decoration: none;
     list-style: none;
+    margin-left: 20px;
 }
 
 h4{
@@ -73,17 +76,22 @@ h4{
 h5 {
     color: white;
     text-decoration: none;
+    margin-left: 20px;
 }
 
 p {
     color: white;
     text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
 a {
     color: white;
     text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -94,14 +102,18 @@ a {
 /**********/
 header {
     display:flex;
+    padding: 1em;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     width:100%;
     z-index: 999;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+/* 
     background-image:linear-gradient(
         var(--brand-color),
-        var(--brand-color-translucent)
-    );
+        var(--brand-color-translucent) */
+    
 }
 
 
@@ -113,11 +125,11 @@ header nav button {
     position: relative;
     z-index: 100;
     width:4em; height:20px;
-    margin:40px; padding: 20px;
+    margin:0; padding: 0px;
     font-size:30px;
     appearance:none;
     border:none;
-    background-color:green;
+    background-color: transparent;
 
       /* hiermee staan de drie streepjes om te beginnen in het midden */
     display:flex;
@@ -125,7 +137,7 @@ header nav button {
     align-items: center;
 
     width:2em; 
-    background-color: black;
+   
     transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275); 
 }
 
@@ -183,6 +195,7 @@ nav li:last-child a{
     width: 100%;
     align-items: center;
     margin-top: 10em;
+    margin-left: -3px;
     padding: 10px 25px 10px 25px;
 }
 
@@ -202,13 +215,14 @@ header nav ul {
     background-color:black;
     transition: .3s;
 }
-
+/*uitklappen menu*/
 header nav ul li:first-of-type{
 margin-top: 40vh;
 }
+
 /*logo*/
 header img:first-of-type{
-    width: 25%;
+    width: 40%;
     margin:10px;
 }
 
@@ -260,10 +274,10 @@ main ul li p:first-of-type{
  
 } */
 
-main .events ul{
+/* main .events ul{
     display:flex;
     flex-direction: column;
-}
+} */
 
 
 section ul li {
@@ -273,14 +287,31 @@ section ul li {
 .animatie{
     position: absolute;
     height: 100vh;
-    left: 50%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
+    width:100%;
     z-index: -99;
+    left: -10px;
+   
+}
+
+.animatie:before{
+    content: "";
+    background: linear-gradient(180deg, rgba(12, 6, 12, 0) 0%, black 90%);
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    bottom: 0;
+    height: 25%;
+}
+
+.animatie video{
+
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+main article section:first-of-type{
+    margin-top: 75vh;
 }
 
 
@@ -344,6 +375,13 @@ display: block;
 /* RESPONSIVENESS */
 /********/
 
+
+@media only screen and (max-width: 481px){
+     footer svg {
+         display: none;
+     }
+}
+
 @media only screen and (min-width: 481px){
      body {
      color: red;
@@ -368,6 +406,13 @@ display: block;
      .events ul li{
          width: 50%;
      }
+
+     footer img {
+         display: none;
+     }
+     footer svg {
+
+     }
 }
 
 /* de button */
@@ -381,7 +426,7 @@ button {
     font-size:1em;
     appearance:none;
     border:none;
-    background-color:Silver;
+   
     
     /* hiermee staan de drie streepjes om te beginnen in het midden */
     display:flex;
@@ -397,7 +442,7 @@ button {
     position:absolute;
     /* maten en een kleurtje */
     width:1em; height: 2px;
-    background-color:white;
+    
     
     /* zodat de beweging op de terugweg .5 seconde duurt */
     /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
@@ -419,7 +464,7 @@ button {
   
   header nav.menuOpen button span {
     /* alle streepjes worden rood */
-    background-color:white;
+ 
     /* zodat de beweging op de heenweg .5 seconde duurt */
     /* met ease-out begint de beweging snel en eindigt langzaam */
     transition:.5s ease-out;
