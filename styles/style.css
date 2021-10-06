@@ -243,7 +243,7 @@ main {
 
 
 main ul li a h3{
-    border:2px solid pink;
+    
     margin-top: -25px;
     margin-left: 10px;
     /*position: absolute;kan wel, alleen zie je dit door de nav*/ 
@@ -255,8 +255,14 @@ main ul li p:first-of-type{
     margin: 40px 0px 0px;
 }
 
-main .events{
+/* main .events{
     background-color: red;
+ 
+} */
+
+main .events ul{
+    display:flex;
+    flex-direction: column;
 }
 
 
@@ -349,13 +355,18 @@ display: block;
      }
 
      .events ul{
-     border-bottom:1px solid blueviolet;
+        flex-direction: row;
+     /* border-bottom:1px solid blueviolet;
      display:flex;
      flex-wrap: wrap;
      position:relative;
      align-items: flex-start;
      justify-content: space-between;
-     margin-bottom: 50px;
+     margin-bottom: 50px; */
+     }
+
+     .events ul li{
+         width: 50%;
      }
 }
 
