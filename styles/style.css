@@ -26,7 +26,8 @@
 :root {
 	--main-color:#000000;
 	--background-color:#000000;
-	--overlay-background-color:#000000ee;   
+	--overlay-background-color:#000000ee;  
+    --brand-color:#000000;
 }
 
 
@@ -43,7 +44,7 @@ body{
     font-family:telegrafultralight;
     font-size: 16px;
     height: 100%;
-    margin: 0;
+    margin: 10px;
 }
 
 h1 {
@@ -59,6 +60,7 @@ h2 {
 
 h3{
     color: white;
+    font-size: 28px;
     text-decoration: none;
     list-style: none;
 }
@@ -86,35 +88,33 @@ a {
 
 
 
+
 /**********/
 /* HEADER */
 /**********/
 header {
     display:flex;
     justify-content: space-between;
-}
-nav {
-    /* display:flex;
     position: fixed;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    text-decoration: none; */
-}
-nav li:last-child a{
-    padding-top: 20px;
+    width:100%;
+    z-index: 999;
+    background-image:linear-gradient(
+        var(--brand-color),
+        var(--brand-color-translucent)
+    );
 }
 
 
+/**********/
+/* HAMBURGER MENU EVENTS*/
+/**********/
 
 header nav button {
     position: relative;
     z-index: 100;
-    width:4em; height:2em;
+    width:4em; height:20px;
     margin:40px; padding: 20px;
-    
-    font-size:1em;
+    font-size:30px;
     appearance:none;
     border:none;
     background-color:green;
@@ -137,6 +137,7 @@ button span {
     /* maten en een kleurtje */
     width:1em; height: 2px;
     background-color:white;
+    padding-bottom: 2px;
     
     /* zodat de beweging op de terugweg .5 seconde duurt */
     /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
@@ -146,42 +147,14 @@ button span {
   
   button span:first-of-type {
     /* het eerste streepje vanuit het midden een beetje omhoog */
-    transform:translatey(-5px);  
+    transform:translatey(-5px); 
+    margin-bottom: 5px; 
   }
   button span:last-of-type {
     /* het laatste streepje vanuit het midden een beetje omlaag */
-    transform:translatey(5px);  
+    transform:translatey(5px); 
+    margin-top: 5px;  
   }
-
- 
-
-
-
-
-header nav ul {
-    position:fixed;
-    left:0;
-    width:100vw;
-    top:0;
-    height:99vh;
-    margin:0;
-    padding:1em;
-    transform: translateY(-100%);
-    list-style: none;
-    background-color:black;
-    transition: .3s;
-}
-
-
-
-header nav ul li a {
-    display: flex;
-    padding-left: 4em;
-    padding-bottom: 1em;
-}
-
-
-
 
 
 header nav.menuOpen ul {
@@ -190,11 +163,73 @@ header nav.menuOpen ul {
 
 
 
+
+
+
+
+
+/**********/
+/* NAV */
+/**********/
+
+nav li:last-child a{
+    font-family:neue_machinaregular;
+    font-size: 16px;
+    color: black;
+    background-color:#ffffff;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 10em;
+    padding: 10px 25px 10px 25px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:fixed;
+    left:0;
+    width:100vw;
+    top:0;
+    height:100vh;
+    margin:0;
+    padding:1em;
+    transform: translateY(-100%);
+    list-style: none;
+    background-color:black;
+    transition: .3s;
+}
+
+header nav ul li:first-of-type{
+margin-top: 40vh;
+}
+/*logo*/
+header img:first-of-type{
+    width: 25%;
+    margin:10px;
+}
+
+/*titel*/
+header nav ul li a {
+    font-family:telegrafultralight;
+    font-size:36px;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
 /********/
 /* MAIN */
 /********/
 main {
-    display: flex;
+    /* display: flex; */
     padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -205,8 +240,41 @@ main {
     text-decoration: none;
 }
 
+
+
+main ul li a h3{
+    border:2px solid pink;
+    margin-top: -25px;
+    margin-left: 10px;
+    /*position: absolute;kan wel, alleen zie je dit door de nav*/ 
+}
+
+/* tekst onder afbeelding */
+main ul li p:first-of-type{
+    font-size:18px;
+    margin: 40px 0px 0px;
+}
+
+main .events{
+    background-color: red;
+}
+
+
 section ul li {
     list-style: none;
+}
+
+.animatie{
+    position: absolute;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    z-index: -99;
 }
 
 
@@ -226,6 +294,7 @@ section ul li a img {
 /********/
 
 footer {
+    
     display: flex;
     padding: 10px;
     padding-left: 40px;
@@ -233,8 +302,131 @@ footer {
     flex-direction: column;
     font-family:neue_machinaregular;
     font-size: 16px;
+    padding-bottom:50px;
 }
 
+footer section {
+    border-top:1px solid #ffffff;
+}
+
+footer form {
+    border-top:1px solid #ffffff;
+    margin-bottom: 40px;
+    border-top:1px solid #ffffff;
+}
+
+/* samsunglogo */
 footer >img{
     margin:0px 0px 50px;
+    width: 70%;
 }
+
+/* logobeneden */
+footer >img:last-child{
+width: 20%;
+
+position: absolute;
+top:335em;
+bottom: ;
+left:18em;
+
+
+display: block;
+}
+
+/********/
+/* RESPONSIVENESS */
+/********/
+
+@media only screen and (min-width: 481px){
+     body {
+     color: red;
+     width: 100%;
+     }
+
+     header nav ul li a {
+         font-size: 48px;
+     }
+
+     .events ul{
+     border-bottom:1px solid blueviolet;
+     display:flex;
+     flex-wrap: wrap;
+     position:relative;
+     align-items: flex-start;
+     justify-content: space-between;
+     margin-bottom: 50px;
+     }
+}
+
+/* de button */
+button {
+    /* zodat de kinderen in de button gepositioneerd worden */
+    position:relative;
+    
+    /* maten, vormgeving  en co van de button */
+    width:2em; height:2em;
+    margin:0; padding:0;
+    font-size:1em;
+    appearance:none;
+    border:none;
+    background-color:Silver;
+    
+    /* hiermee staan de drie streepjes om te beginnen in het midden */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+
+  /* de streepjes */
+  button span {
+    /* hiermee worden de span uit de normale flow gehaald */
+    /* in combinatie met flex van de button staan ze dan over elkaar heen */
+    position:absolute;
+    /* maten en een kleurtje */
+    width:1em; height: 2px;
+    background-color:white;
+    
+    /* zodat de beweging op de terugweg .5 seconde duurt */
+    /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
+    /* https://matthewlein.com/tools/ceaser */
+    transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  }
+  
+  button span:first-of-type {
+    /* het eerste streepje vanuit het midden een beetje omhoog */
+    transform:translatey(-5px);  
+  }
+  button span:last-of-type {
+    /* het laatste streepje vanuit het midden een beetje omlaag */
+    transform:translatey(5px);  
+  }
+  
+  /* met JS wordt de class 'menuOpen' aan de body toegevoegd */
+  /* die kan gebruikt worden om de button aan te passen */
+  
+  header nav.menuOpen button span {
+    /* alle streepjes worden rood */
+    background-color:white;
+    /* zodat de beweging op de heenweg .5 seconde duurt */
+    /* met ease-out begint de beweging snel en eindigt langzaam */
+    transition:.5s ease-out;
+  }
+  
+  header nav.menuOpen button span:first-of-type {
+    /* het eerste streepje gaat terug naar het midden */
+    /* en draait ondertussen 45 graden */
+    transform:translatey(3px) rotate(45deg);  
+  }
+  
+  header nav.menuOpen button span:nth-of-type(2) {
+    /* het tweede streepje wordt doorzichtig */
+    opacity:0;
+  }
+  
+  header nav.menuOpen button span:last-of-type {
+    /* het laatste streepje gaat terug naar het midden */
+    /* en draait ondertussen -45 graden */
+    transform:translatey(-3px) rotate(-45deg);  
+  }
