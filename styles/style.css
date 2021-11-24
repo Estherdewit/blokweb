@@ -2,20 +2,22 @@
     font-family: 'telegrafultralight';
     src: url('../fonts/telegrafultralight200-webfont.woff2') format('woff2'),
          url('../fonts/telegrafultralight200-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+     font-weight: normal;
+     font-style: normal;
 }
 
 @font-face {
-    font-family: 'neue_machinaregular';
-    src: url('../fonts/neuemachina-regular-webfont.woff2') format('woff2'),
+     font-family: 'neue_machinaregular';
+     src: url('../fonts/neuemachina-regular-webfont.woff2') format('woff2'),
          url('../fonts/neuemachina-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+     font-weight: normal;
+     font-style: normal;
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
 }
 
 
@@ -24,10 +26,8 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	--main-color:#000000;
-	--background-color:#000000;
-	--overlay-background-color:#000000ee;  
-    --brand-color:#000000;
+	 --background-color:#000000;
+     --primary-clr:white;
 }
 
 
@@ -36,64 +36,68 @@
 /* GENERAL STYLING */
 /*******************/
 html {
-    height: 100%;
+     height: 100%;
 }
 
-body{
-    background-color:var(--background-color);
-    font-family:telegrafultralight;
-    font-size: 16px;
-    height: 100%;
-    margin:0;
+body {
+     background-color: var(--background-color);
+     font-family: telegrafultralight;
+     font-size: 16px;
+     height: 100%;
+     margin: 0;
+     -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-    color: white;
-    text-decoration: none;
-    font-size: 54px;
-    padding-top: 20px;
-    margin-left: 20px;
-}
-
-h2 {
-    color: white;
-    text-decoration: none;
-}
-
-h3{
-    color: white;
-    font-size: 28px;
-    text-decoration: none;
-    list-style: none;
-    margin-left: 20px;
-}
-
-h4{
-    color: white;
-    text-decoration: none;
-}
-
-h5 {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
 
 p {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
-
+     color: var(--primary-clr);
+     margin-right: 20px;
 }
+
 
 a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
+     color: var(--primary-clr);
+     text-decoration: none;
+     margin-left: 20px;
+     margin-right: 20px;
 }
 
+
+h1 {
+     color: var(--primary-clr);
+     font-size: 54px;
+     padding-top: 20px;
+     margin-left: 20px;
+}
+
+
+h2 {
+     color: var(--primary-clr);
+}
+
+
+h3 {
+     color: var(--primary-clr);
+     font-size: 28px;
+     list-style: none;
+     margin-left: 20px;
+}
+
+
+h4 {
+     color: var(--primary-clr);
+}
+
+
+h5 {
+     color: var(--primary-clr);
+     margin-left: 20px;
+}
+
+h6 {
+     color: var(--primary-clr);
+     margin-left: 16px;
+}
 
 
 
@@ -101,82 +105,174 @@ a {
 /* HEADER */
 /**********/
 header {
-    display:flex;
-    padding: 1em;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width:100%;
-    z-index: 999;
-    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-/* 
-    background-image:linear-gradient(
-        var(--brand-color),
-        var(--brand-color-translucent) */
-    
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: fixed;
+     width: 100%;
+     z-index: 1000;
+     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+header nav {
+     margin: 10px;
+}
+
+/*logo*/
+header img:first-of-type {
+     width: 45%;
+     margin-top: 20px;
+     margin-left: 20px;
+}
+
+/*titel*/
+header nav ul li a {
+     font-family: telegrafultralight;
+     font-size: 36px;
+     display: flex;
+     padding-bottom: 5px;
+
 }
 
 
-/**********/
-/* HAMBURGER MENU EVENTS*/
-/**********/
 
-header nav button {
-    position: relative;
-    z-index: 100;
-    width:4em; height:20px;
-    margin:0; padding: 0px;
-    font-size:30px;
-    appearance:none;
-    border:none;
-    background-color: transparent;
-
-      /* hiermee staan de drie streepjes om te beginnen in het midden */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
-    width:2em; 
-   
-    transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275); 
-}
+  /********/
+/* HAMBURGER MENU */
+/********/
 
 /* de streepjes */
 button span {
     /* hiermee worden de span uit de normale flow gehaald */
     /* in combinatie met flex van de button staan ze dan over elkaar heen */
-    position:absolute;
+     position: absolute;
     /* maten en een kleurtje */
-    width:1em; height: 2px;
-    background-color:white;
-    padding-bottom: 2px;
+     width: 1em; height: 2px;
+     background-color: var(--primary-clr);
+     padding-bottom: 2px;
     
     /* zodat de beweging op de terugweg .5 seconde duurt */
     /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
     /* https://matthewlein.com/tools/ceaser */
-    transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
-  }
+     transition: .5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
   
-  button span:first-of-type {
-    /* het eerste streepje vanuit het midden een beetje omhoog */
-    transform:translatey(-5px); 
-    margin-bottom: 5px; 
-  }
-  button span:last-of-type {
-    /* het laatste streepje vanuit het midden een beetje omlaag */
-    transform:translatey(5px); 
-    margin-top: 5px;  
-  }
 
+button span:first-of-type {
+    /* het eerste streepje vanuit het midden een beetje omhoog */
+     transform: translatey(-5px); 
+     margin-bottom: 5px; 
+} 
+
+
+button span:last-of-type {
+    /* het laatste streepje vanuit het midden een beetje omlaag */
+     transform: translatey(5px); 
+     margin-top: 5px;  
+}
 
 header nav.menuOpen ul {
-    transform: translateY(0%);
+     transform: translateY(0%);
 }
 
 
+/*HAMBURGER MENU OPEN*/
+
+button {
+    /* zodat de kinderen in de button gepositioneerd worden */
+     position: relative;
+    
+    /* maten, vormgeving  en co van de button */
+     width: 2em; height:2em;
+     margin: 0; padding:0;
+    
+     font-size: 1em;
+     appearance: none;
+     border: none;
+   
+    
+    /* hiermee staan de drie streepjes om te beginnen in het midden */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
 
 
+  /*HAMBURGER MENU DICHT*/
 
+  /* de streepjes */
+button span {
+    /* hiermee worden de span uit de normale flow gehaald */
+    /* in combinatie met flex van de button staan ze dan over elkaar heen */
+     position: absolute;
+    /* maten en een kleurtje */
+     width: 1em; height: 2px;
+    
+    
+    /* zodat de beweging op de terugweg .5 seconde duurt */
+    /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
+    /* https://matthewlein.com/tools/ceaser */
+     transition: .5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+  
+button span:first-of-type {
+    /* het eerste streepje vanuit het midden een beetje omhoog */
+     transform: translatey(-5px);  
+}
+
+button span:last-of-type {
+    /* het laatste streepje vanuit het midden een beetje omlaag */
+     transform: translatey(5px);  
+}
+  
+  /* met JS wordt de class 'menuOpen' aan de body toegevoegd */
+  /* die kan gebruikt worden om de button aan te passen */
+  
+header nav.menuOpen button span {
+    /* alle streepjes worden rood */
+ 
+    /* zodat de beweging op de heenweg .5 seconde duurt */
+    /* met ease-out begint de beweging snel en eindigt langzaam */
+    transition: .5s ease-out;
+}
+  
+header nav.menuOpen button span:first-of-type {
+    /* het eerste streepje gaat terug naar het midden */
+    /* en draait ondertussen 45 graden */
+     transform: translatey(3px) rotate(45deg);  
+}
+  
+header nav.menuOpen button span:nth-of-type(2) {
+    /* het tweede streepje wordt doorzichtig */
+     opacity: 0;
+}
+  
+header nav.menuOpen button span:last-of-type {
+    /* het laatste streepje gaat terug naar het midden */
+    /* en draait ondertussen -45 graden */
+     transform: translatey(-3px) rotate(-45deg);  
+}
+
+/**********/
+/* HAMBURGERMENU EVENTS*/
+/**********/
+
+header nav button {
+     position: relative;
+     z-index: 100;
+     width: 4em; height:20px;
+     margin: 0; padding: 0px;
+     font-size: 30px;
+     appearance: none;
+     border: none;
+     background-color: transparent;
+
+      /* hiermee staan de drie streepjes om te beginnen in het midden */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 2em; 
+     transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+}
 
 
 
@@ -185,57 +281,36 @@ header nav.menuOpen ul {
 /**********/
 
 nav li:last-child a{
-    font-family:neue_machinaregular;
-    font-size: 16px;
-    color: black;
-    background-color:#ffffff;
-    display: block;
-    padding-top: 20px;
-    text-align: center;
-    width: 100%;
-    align-items: center;
-    margin-top: 10em;
-    margin-left: -3px;
-    padding: 10px 25px 10px 25px;
+     font-family:neue_machinaregular;
+     font-size: 16px;
+     color: black;
+     background-color: var(--primary-clr);
+     display: block;
+     padding-top: 20px;
+     text-align: center;
+     width: 100%;
+     align-items: center;
+     margin-top: 10em;
+     margin-left: -3px;
+     padding: 10px 25px 10px 25px;
 }
 
 header nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position:fixed;
-    left:0;
-    width:100vw;
-    top:0;
-    height:100vh;
-    margin:0;
-    padding:1em;
-    transform: translateY(-100%);
-    list-style: none;
-    background-color:black;
-    transition: .3s;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     position: fixed;
+     left: 0;
+     width: 100vw;
+     top: 0;
+     height: 100vh;
+     margin: 0;
+     padding: 1em;
+     transform: translateY(-100%);
+     list-style: none;
+     background-color: var(--background-color);
+     transition: .3s;
 }
-/*uitklappen menu*/
-header nav ul li:first-of-type{
-margin-top: 40vh;
-}
-
-/*logo*/
-header img:first-of-type{
-    width: 40%;
-    margin:10px;
-}
-
-/*titel*/
-header nav ul li a {
-    font-family:telegrafultralight;
-    font-size:36px;
-    display: flex;
-    padding-bottom: 5px;
-}
-
-
-
 
 
 
@@ -243,76 +318,268 @@ header nav ul li a {
 /* MAIN */
 /********/
 main {
-    /* display: flex; */
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
+     padding-top: 10px;
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+     color: var(--primary-clr);
+     text-decoration: none;
+}
+
+
+.banner {
+     position: absolute;
+     height: 100vh;
+     width: 100%;
+     z-index: -99;
+     left: -10px;
+}
+
+.banner img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+
+main ul {
+     margin-left: 20px;
+}
+
+
+main section h2 {
+     margin-left: 20px;
+}
+
+
+main article section:first-of-type {
+     margin-top: 75vh;
+}
+
+
+main section ul li:last-of-type {
+     padding-bottom: 10px;
 }
 
 
 
-main ul li a h3{
-    
-    margin-top: -25px;
-    margin-left: 10px;
-    /*position: absolute;kan wel, alleen zie je dit door de nav*/ 
+/********/
+/* INFO ITEMS */
+/********/
+
+.titel {
+     padding:0 30px;
 }
 
-/* tekst onder afbeelding */
-main ul li p:first-of-type{
-    font-size:18px;
-    margin: 40px 0px 0px;
+.info {
+     padding:0 30px;
 }
 
-/* main .events{
-    background-color: red;
- 
-} */
+.eventinfo {
+     padding:0 50px;
+}
 
-/* main .events ul{
-    display:flex;
-    flex-direction: column;
-} */
+
+.artiesten {
+     margin: 20px 0 30px 0;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+}
+
+
+.titel h1 {
+     margin-left: 0px;
+}
+
+
+.titel h3 {
+     padding: 10px;
+     margin-left: -10px;
+     font-size: 24px;
+}
+
+
+.eventinfo h1 {
+     margin: 0;
+     margin-top: 13em;
+     padding-left: -40px;
+     margin-bottom: 75px;
+}
+
+.eventinfo p {
+     margin: 0px 0px 44px;
+     padding-top: 10px;
+     font-size: 20px;
+     padding-bottom: 0 0 40px;
+}
+
+
+.artiesten p {
+     font-size: 18px;
+}
+
+
+.info p:first-of-type {
+     margin-bottom: 40px;
+     font-size: 20px;
+}
+
+
+.info p:last-of-type {
+     margin: 0 0 44px;
+     font-size: 18px;
+}
+
+
+
+/********/
+/* EVENT ITEMS */
+/********/
+
+.events {
+     padding: 0 30px;
+     max-width: 1000px;
+}
+
+
+.events ul {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+}
+
+
+.events ul li {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     margin-bottom: 2em;
+}
+
+
+.events ul li a {
+     text-decoration: none;
+     color: white;
+}
+
+
+.events ul li a h3 {
+     width: 100%;
+}
+
+
+.events ul li a img {
+     width: 100%;
+}
 
 
 section ul li {
-    list-style: none;
+     list-style: none;
 }
 
-.animatie{
-    position: absolute;
-    height: 100vh;
-    width:100%;
-    z-index: -99;
-    left: -10px;
-   
+
+main ul li a h3 {  
+     margin-top: -25px;
+     margin-left: 10px;
 }
 
-.animatie:before{
-    content: "";
-    background: linear-gradient(180deg, rgba(12, 6, 12, 0) 0%, black 90%);
-    position: absolute;
-    left: -10px;
-    right: -10px;
-    bottom: 0;
-    height: 25%;
+
+/* tekst onder afbeelding */
+.events ul li p:first-of-type {
+     font-size: 18px;
+     margin: 40px 0px 0px;
 }
 
-.animatie video{
 
-height: 100%;
-width: 100%;
-object-fit: cover;
+/********/
+/* ALSO AT NEXT */
+/********/
+
+.atnext {
+     padding: 0 30px;
 }
 
-main article section:first-of-type{
-    margin-top: 75vh;
+
+.atnext p {
+     margin: 0;
+     padding: 0;
+     font-size: 16px;
 }
+
+
+.atnext h2 {
+     margin-bottom: 10px;
+     font-size: 44px;
+}
+
+
+.atnext ul {
+     margin-bottom: 60px;
+}
+
+
+.atnext ul li {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     padding: 20px 40px 20px 0;
+     border-bottom: 1px solid var(--primary-clr);
+}
+
+
+.events ul li section p:first-of-type {
+     padding: 0;
+     font-size: 18px;
+}
+
+
+.events ul li section p:last-of-type {
+     padding: 0;
+     font-size: 18px;
+}
+
+
+ul li p {
+     border-radius: 5px;
+     padding: 20px;
+     font-size: 150%;
+}
+
+
+
+/********/
+/* ANNIMATIES */
+/********/
+
+.animatie {
+     position: absolute;
+     height: 100vh;
+     width: 100%;
+     z-index: -99;
+     left: -10px;
+}
+
+
+.animatie:before {
+     content: "";
+     background: linear-gradient(180deg, rgba(12, 6, 12, 0) 0%, black 90%);
+     position: absolute;
+     left: -10px;
+     right: -10px;
+     bottom: 0;
+     height: 25%;
+}
+
+
+ .animatie video{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
 
 
 /********/
@@ -320,169 +587,345 @@ main article section:first-of-type{
 /********/
 
 section ul li a img {
-    max-width: 90%;
-    margin: 0;
-    padding-right:10px;
+     max-width: 80%;
+     margin: 0;
+     padding-right: 10px;
 }
+
+
+
+/********/
+/* FORMULIER */
+/********/
+
+fieldset {
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: none;
+}
+
+
+.adress {
+     margin-right: 30px;
+}
+
+
+.socials {
+     margin-right: 30px;
+}
+
+
+.form {
+     padding-top: 20px;
+     margin-right: 30px;
+}
+
+
+.socials img {
+     margin: 0 0 40px;
+}
+
+
+.socials p {
+     margin-bottom: -40px;
+}
+
+
+.adress p:first-of-type { 
+     margin: 0 0 40px;
+}
+
+
+.adress P:last-of-type {
+     margin-bottom: -20px;
+}
+
+
+fieldset input {
+     margin-bottom: 20px;
+     width: 100%;
+     padding: 20px;
+     font-size: 20px;
+     height: 40px;
+     font-family: "NeueMachina-Regular", sans-serif;
+     background: rgba(255, 255, 255, 0.1);
+     color: var(--primary-clr);
+     border: none;
+     padding: 10px;
+  
+}
+
+
+fieldset button {
+     width: 25%;
+     left: 75%;
+     background-color: var(--background-color);
+     ont-family:"telegrafultralight", sans-serif;
+     color: var(--primary-clr);
+}
+
 
 
 /********/
 /* FOOTER */
 /********/
-
 footer {
-    
-    display: flex;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    flex-direction: column;
-    font-family:neue_machinaregular;
-    font-size: 16px;
-    padding-bottom:50px;
+     display: flex;
+     width: 100%;
+     padding: 0 30px;
+     flex-direction: column;
+     font-size: 16px;
 }
 
-footer section {
-    border-top:1px solid #ffffff;
-}
 
 footer form {
-    border-top:1px solid #ffffff;
-    margin-bottom: 40px;
-    border-top:1px solid #ffffff;
+     border-top:1px solid var(--primary-clr);
+     padding-top: 10px;
+     margin-bottom: 40px;
+     border-top:1px solid var(--primary-clr);
 }
+
+
+footer section {
+     margin: 0 0 20px;
+     padding: 20px 0 0;
+     font-family:"telegrafultralight", sans-serif;
+     font-size: 18px;
+     border-top:1px solid var(--primary-clr);
+}
+
 
 /* samsunglogo */
-footer >img{
-    margin:0px 0px 50px;
-    width: 70%;
+footer >img {
+     margin:0px 0px 50px;
+     width: 70%;
 }
+
 
 /* logobeneden */
-footer >img:last-child{
-width: 20%;
-
-position: absolute;
-top:335em;
-bottom: ;
-left:18em;
-
-
-display: block;
+footer >img:last-of-type {
+     display: block;
+     width: 25%;
+     position: relative;
+     bottom: 2.5em;
+     margin: 0;
+     left:15em;
 }
+
+
+footer section h4 {
+     margin: 0 0 10px;
+     font-size: 24px;
+}
+
+
+footer section p:last-of-type {
+     font-family: "neue_machinaregular";
+}
+
+
+footer form h4 {
+     margin:0 0 10px;
+     font-size: 24px;
+     font-family:"telegrafultralight", sans-serif;
+}
+
+footer form p {
+     margin-left:0px;
+}
+
+
 
 /********/
 /* RESPONSIVENESS */
 /********/
 
+@media only screen and (max-width: 481px) {
 
-@media only screen and (max-width: 481px){
-     footer svg {
+    .wrapnav {
+         display: none;
+    } 
+    
+    footer svg {
          display: none;
      }
+
+     header svg {
+         display: none;
+     }
+
+    footer >img {
+         margin:0px 0px 50px;
+         max-width: 20%;
+    }
+
 }
 
-@media only screen and (min-width: 481px){
-     body {
-     color: red;
-     width: 100%;
+@media only screen and (min-width: 481px) {
+
+     .atnext {
+         margin: 0;
+         padding: 0 30px;
+    }
+
+    .adress {
+        margin: 0;
+        padding: 0 30px;
+        padding-top: 20px;
+    }
+
+    .socials {
+         margin: 0;
+         padding: 0 30px;
+         padding-top: 20px;
+    }
+
+     .form {
+         margin: 0;
+         padding: 0 30px;
+         padding-top: 20px;
+    }
+
+     .events ul {
+         flex-direction: row;
+         justify-content: space-between;
+         margin: 0;
+         padding: 0 30px;
+    }
+
+     .eventinfo h1 {
+         font-size: 68px;
+         margin-top: 12em;
+    }
+
+     .socials p {
+         margin-bottom: 5px;
      }
+
+     footer >img {
+         margin:0px 0px 50px;
+         max-width: 70%;
+    }
+
+     header nav {
+         margin:0;
+         margin-top: 50px;
+    }
+
+     header svg {
+         display: block;
+         position: absolute;
+         width: 10%;
+         min-width: 5%;
+         max-width: 10%;
+    }
+
+     footer svg {
+         display: block;
+         width: 25%;
+         position: relative;
+         bottom: 5em;
+         margin: 0;
+         left: 25em;
+         width: 15%;
+    }
+
+     header nav button {
+         margin-left: 10em;
+    }
+
+     .events ul li {
+         width: 50%;
+    }
+
+     .adress p:last-of-type {
+         margin-bottom: 10px;
+    }
+
+     footer>img:last-of-type {
+         display: none;
+    }
+
+    header img:first-of-type {
+         display: none;
+    }
+
+     header nav button {
+         margin-top: 20px;
+         margin-right: 20px;
+    }
 
      header nav ul li a {
          font-size: 48px;
-     }
+    }
+}  
 
-     .events ul{
-        flex-direction: row;
-     /* border-bottom:1px solid blueviolet;
-     display:flex;
-     flex-wrap: wrap;
-     position:relative;
-     align-items: flex-start;
-     justify-content: space-between;
-     margin-bottom: 50px; */
-     }
 
-     .events ul li{
-         width: 50%;
-     }
-
-     footer img {
+@media only screen and (max-width: 768px) {
+    .wrapnav {
          display: none;
-     }
-     footer svg {
+    }
 
-     }
+    .header svg {
+         max-width: 10%;
+    }
 }
 
-/* de button */
-button {
-    /* zodat de kinderen in de button gepositioneerd worden */
-    position:relative;
-    
-    /* maten, vormgeving  en co van de button */
-    width:2em; height:2em;
-    margin:0; padding:0;
-    font-size:1em;
-    appearance:none;
-    border:none;
-   
-    
-    /* hiermee staan de drie streepjes om te beginnen in het midden */
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-  
+@media only screen and (min-width: 769px){
+    .events ul li:nth-child(2n) {
+         margin: 100px 0 50px;
+    }
 
-  /* de streepjes */
-  button span {
-    /* hiermee worden de span uit de normale flow gehaald */
-    /* in combinatie met flex van de button staan ze dan over elkaar heen */
-    position:absolute;
-    /* maten en een kleurtje */
-    width:1em; height: 2px;
-    
-    
-    /* zodat de beweging op de terugweg .5 seconde duurt */
-    /* de cubic-bezier zorgt ervoor dat de straapjes een beetje 'doorschieten' */
-    /* https://matthewlein.com/tools/ceaser */
-    transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
-  }
-  
-  button span:first-of-type {
-    /* het eerste streepje vanuit het midden een beetje omhoog */
-    transform:translatey(-5px);  
-  }
-  button span:last-of-type {
-    /* het laatste streepje vanuit het midden een beetje omlaag */
-    transform:translatey(5px);  
-  }
-  
-  /* met JS wordt de class 'menuOpen' aan de body toegevoegd */
-  /* die kan gebruikt worden om de button aan te passen */
-  
-  header nav.menuOpen button span {
-    /* alle streepjes worden rood */
- 
-    /* zodat de beweging op de heenweg .5 seconde duurt */
-    /* met ease-out begint de beweging snel en eindigt langzaam */
-    transition:.5s ease-out;
-  }
-  
-  header nav.menuOpen button span:first-of-type {
-    /* het eerste streepje gaat terug naar het midden */
-    /* en draait ondertussen 45 graden */
-    transform:translatey(3px) rotate(45deg);  
-  }
-  
-  header nav.menuOpen button span:nth-of-type(2) {
-    /* het tweede streepje wordt doorzichtig */
-    opacity:0;
-  }
-  
-  header nav.menuOpen button span:last-of-type {
-    /* het laatste streepje gaat terug naar het midden */
-    /* en draait ondertussen -45 graden */
-    transform:translatey(-3px) rotate(-45deg);  
-  }
+    .events ul li img {
+         max-width: 50%;
+    }
+
+    .events ul {
+         margin: 0;
+         padding-left: 6em;
+         padding-top: 20px;
+    }
+
+    footer svg {
+         width: 10%;
+         bottom: 9em;
+         left: 34em;
+    }
+
+    .wrapnav ul {
+         height: 100%;
+         position: relative;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         width: 100%;
+    }
+
+    header nav button {
+         display: none;
+    }
+
+    .wrapnav ul li {
+         padding-top: 5%;  
+    }
+
+    .wrapnav ul li:last-of-type {
+         font-size: 18px;
+         color: var(--background-color);
+         margin-top: 30px;
+         padding-top: 0;
+    }
+
+    .wrapnav ul li:last-of-type a {
+         color: var(--background-color);
+         background-color: var(--primary-clr);
+         padding: 10px 40px;
+    }
+}
+
+@media only screen and (max-width: 1526px) {
+    .header svg {
+         max-width: 10%;
+    }
+}
