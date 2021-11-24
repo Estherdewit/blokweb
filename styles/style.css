@@ -404,7 +404,7 @@ main section ul li:last-of-type {
 .eventinfo h1 {
      margin: 0;
      margin-top: 13em;
-     padding-left: -40px;
+     padding-right: 40px;
      margin-bottom: 75px;
 }
 
@@ -412,7 +412,7 @@ main section ul li:last-of-type {
      margin: 0px 0px 44px;
      padding-top: 10px;
      font-size: 20px;
-     padding-bottom: 0 0 40px;
+     padding-bottom: 40px;
 }
 
 
@@ -660,7 +660,7 @@ fieldset button {
      width: 25%;
      left: 75%;
      background-color: var(--background-color);
-     ont-family:"telegrafultralight", sans-serif;
+     font-family:"telegrafultralight", sans-serif;
      color: var(--primary-clr);
 }
 
